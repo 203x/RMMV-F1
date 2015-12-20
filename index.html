@@ -1,25 +1,50 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh" lang="zh">
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>RPG Maker MV 帮助文档中文汉化版</title>
 <link rel="stylesheet" href="inc/css/style.min.css" />
 <script type="text/javascript" src="inc/js/lib/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="inc/js/common.js"></script>
+<script type="text/javascript" src="inc/js/lib/jquery.ba-hashchange.min.js"></script>
+<!-- <script type="text/javascript" src="inc/js/common.js"></script> -->
 </head>
-<frameset rows="80px, *, 20px">
+
+<!-- <frameset rows="80px, *, 20px">
 	<frame src="parts/header.html" name="frame_header" frameborder="0" noresize="noresize" />
-	<frameset cols="*,1000px,*">
-		<frame src="about:blank" frameborder="0" noresize="noresize" />
-			<frameset cols="250px,750px">
-				<frame src="parts/side.html" name="frame_side" frameborder="0" noresize="noresize" />
-				<frame src="page/01.html" name="frame_main" frameborder="0" noresize="noresize" />
-			</frameset>
-		<frame src="about:blank" frameborder="0" noresize="noresize" />
-	</frameset>
-</frameset>
+		<frameset cols="250px,750px">
+			<frame src="parts/side.html" name="frame_side" frameborder="0" noresize="noresize" />
+			<frame src="page/01.html" name="frame_main" id="frame_main" frameborder="0" noresize="noresize" />
+		</frameset>
+</frameset> -->
 
-
-
+<body>
+	<div class="header"></div>
+	<div id="page">
+		<div class="side"></div>
+		<div class="main"></div>
+	</div>
+</body>
+<style>
+.side,.main{
+	float:left;
+	padding: 20px;
+	border: 1px solid #eee;
+}
+#page{
+	width: 960px;
+	margin: auto;
+	padding-top: 20px;
+}
+.side{
+	width:240px;
+	height: 700px;
+	overflow-y:scroll;
+}
+.main{
+	width:700px;
+	margin-left: 20px;
+}
+</style>
+<script type="text/javascript" src="inc/js/all.js"></script>
 </html>
