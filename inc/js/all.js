@@ -1,4 +1,12 @@
+$(document).ajaxStart(function() {
+	NProgress.start();
+});
+$(document).ajaxStop(function() {
+	NProgress.done();
+});
+
 $(function() {
+
 	function get_hash (name) {
 		var hash = window.location.hash,hash_reg;
 		switch (name) {
